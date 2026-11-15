@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,12 +64,15 @@ body {
     animation: backgroundMove 16s ease infinite;
 
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
     padding: 40px 20px;
 
     overflow-x: hidden;
+
 }
 
 @keyframes backgroundMove {
@@ -483,6 +485,59 @@ h1 {
 
 }
 
+/* =========================
+   INFINITE MARQUEE FOOTER
+========================= */
+
+.marquee {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 0;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(200, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(200, 0, 0, 0.25);
+
+    background: rgba(20, 0, 0, 0.35);
+}
+
+.marquee-track {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    animation: none;
+}
+
+.marquee-track span {
+    display: none;
+}
+
+.marquee-track span:first-child {
+    display: block;
+
+    color: #d32f2f;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Pause when hovered */
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+}
+
 </style>
 </head>
 
@@ -551,6 +606,12 @@ h1 {
 
     </div>
 </div>
+
+<footer class="marquee">
+    <div class="marquee-track">
+        <span>01001111 01111000 01100110 01100010 00100000 01000111 01101100 01100100 01110000 01110010 01110001 01100111</span>
+    </div>
+</footer>
 
 </body>
 </html>
