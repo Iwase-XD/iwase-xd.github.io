@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASSAULT RIFLES // CODM BR GUNSMITHS</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #101010;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+/* BACKGROUND */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 10%, #292929, transparent 60%),
+        linear-gradient(135deg, #111, #080808);
+    z-index: -1;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 45px 15px 30px;
+    animation: fadeDown 0.8s ease both;
+}
+
+.header .tag {
+    color: #f5e900;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: clamp(35px, 7vw, 60px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header h1 span {
+    color: #f5e900;
+}
+
+.header p {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 12px;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #f5e900;
+    margin: 25px auto;
+}
+
+/* WEAPON CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+/* WEAPON CARD */
+
+.weapon-card {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-left: 5px solid #f5e900;
+    margin: 30px 0;
+    padding: 25px;
+    animation: fadeUp 0.8s ease both;
+    transition: 0.3s ease;
+}
+
+.weapon-card:hover {
+    border-color: #f5e900;
+    box-shadow: 0 0 25px #f5e90015;
+}
+
+/* WEAPON NAME */
+
+.weapon-card h2 {
+    font-size: clamp(30px, 5vw, 45px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.weapon-card h2 span {
+    color: #f5e900;
+}
+
+/* WEAPON IMAGE */
+
+.weapon-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 20 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 25px;
+    border: 1px solid #444;
+}
+
+/* SECTION LABELS */
+
+.label {
+    color: #f5e900;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 25px 0 12px;
+    text-transform: uppercase;
+}
+
+/* ATTACHMENTS */
+
+.attachment {
+    background: #242424;
+    border: 1px solid #333;
+    border-left: 3px solid #666;
+    padding: 13px 15px;
+    margin: 8px 0;
+    color: #ddd;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.attachment:hover {
+    border-left-color: #f5e900;
+    background: #303030;
+    transform: translateX(4px);
+}
+
+/* MODS */
+
+.mod {
+    display: inline-block;
+    background: #292929;
+    border: 1px solid #444;
+    border-radius: 3px;
+    padding: 10px 14px;
+    margin: 5px 3px;
+    color: #f5e900;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #252525;
+    color: #555;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    .weapon-card {
+        padding: 18px;
+    }
+
+    .attachment {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="tag">CALL OF DUTY MOBILE // BATTLE ROYALE</div>
+
+    <h1><span>ASSAULT</span> RIFLES</h1>
+
+    <p>BASTA PANG BADING ANG HADES NA MAY DISABLE</p>
+
+    <div class="divider"></div>
+</header>
+
+<main class="container">
+
+    <!-- AK-117 -->
+
+    <section class="weapon-card">
+
+        <h2>01 / <span>AK-117</span></h2>
+
+        <img src="AK117.jpg" class="weapon-image" alt="AK-117">
+
+        <div class="label">ATTACHMENTS</div>
+
+        <div class="attachment">MUZZLE: Monolithic Suppressor</div>
+        <div class="attachment">BARREL: OWC Marksman</div>
+        <div class="attachment">LASER: OWC Laser - Tactical</div>
+        <div class="attachment">MAGAZINE: 48 Round Mag</div>
+        <div class="attachment">REAR GRIP: Granulated Grip Tape</div>
+
+        <div class="label">MODS</div>
+
+        <span class="mod">Vertical Recoil</span>
+        <span class="mod">Extended</span>
+        <span class="mod">Precise Shot</span>
+        <span class="mod">Long Range</span>
+
+        <div class="label">NOTE</div>
+        <p>If you don't own a Mythic Blueprint, replace the Magazine attachment with an Optic and prioritize the Extended Mod.</p>
+
+    </section>
+
+    <section class="weapon-card">
+
+        <h2>02 / <span>RAM-7</span></h2>
+
+        <!-- Add your Kilo image here -->
+        <img src="RAM7.jpg" class="weapon-image" alt="Kilo-141">
+
+        <div class="label">ATTACHMENTS</div>
+
+        <div class="attachment">MUZZLE: Monolithic Suppressor</div>
+        <div class="attachment">BARREL: FSS Ranger</div>
+        <div class="attachment">AMMUNITION: 50 Round Reload</div>
+        <div class="attachment">REAR GRIP: Granulated Grip Tape</div>
+        <div class="attachment">FREE SLOT</div>
+
+        <div class="label">MODS</div>
+
+        <span class="mod">Vertical Recoil</span>
+        <span class="mod">Extended</span>
+        <span class="mod">Precise Shot</span>
+        <span class="mod">Long Range</span>
+
+        <div class="label">NOTE</div>
+        <p>The Optic attachment is optional. If you prefer not to use an Optic, you can replace it with a Laser or Stock attachment.</p>
+
+
+    </section>
+
+    <section class="weapon-card">
+
+        <h2>03 / <span>KILO-141</span></h2>
+
+        <!-- Add your Kilo image here -->
+        <img src="KILO141.jpg" class="weapon-image" alt="Kilo-141">
+
+        <div class="label">ATTACHMENTS</div>
+
+        <div class="attachment">MUZZLE: Tactical Suppressor</div>
+        <div class="attachment">BARREL: OWC Marksman</div>
+        <div class="attachment">AMMUNITION: Large Extended Mag B</div>
+        <div class="attachment">REAR GRIP: Granulated Grip Tape</div>
+        <div class="attachment">FREE SLOT</div>
+
+        <div class="label">MODS</div>
+
+        <span class="mod">Vertical Recoil</span>
+        <span class="mod">Extended</span>
+        <span class="mod">Precise Shot</span>
+        <span class="mod">Long Range</span>
+
+        <div class="label">NOTE</div>
+        <p>Very effective in verdansk bro trust 🔥</p>
+
+
+    </section>
+
+    <section class="weapon-card">
+
+        <h2>04 / <span>BAL-27</span></h2>
+
+        <!-- Add your Kilo image here -->
+        <img src="BAL27.jpg" class="weapon-image" alt="Kilo-141">
+
+        <div class="label">ATTACHMENTS</div>
+
+        <div class="attachment">MUZZLE: Kastovia DX90</div>
+        <div class="attachment">BARREL: Crown-H3 Barrel</div>
+        <div class="attachment">AMMUNITION: 60 Round Reload</div>
+        <div class="attachment">REAR GRIP: Highground Grip</div>
+        <div class="attachment">FREE SLOT</div>
+
+        <div class="label">MODS</div>
+
+        <span class="mod">Vertical Recoil</span>
+        <span class="mod">Extended</span>
+        <span class="mod">Precise Shot</span>
+        <span class="mod">Long Range</span>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    NESTEA
+</footer>
+
+</body>
+</html>
