@@ -2,53 +2,138 @@
 <html>
 <head>
 <style>
-    body {
-        background-color: rgb(44, 44, 44);
-        font-family: Arial, sans-serif;
+   body {
+    background: linear-gradient(
+        -45deg,
+        #090909,
+        #200707,
+        #151515,
+        #350000,
+        #090909
+    );
+
+    background-size: 400% 400%;
+    animation: backgroundMove 12s ease infinite;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
     }
-    h1 {
-        text-align: center;
-        color: white;
-        font-size: 75px;
+    50% {
+        background-position: 100% 50%;
     }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+   h1 {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
     a {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .button {
+   .button {
     display: inline-block;
-    background-color: rgb(245, 245, 0);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 50px;
-    color: black;
-    transition: 0.3s;
     width: 500px;
+    box-sizing: border-box;
+
+    background: linear-gradient(135deg, #a00000, #650000);
+    color: white;
+
+    padding: 15px 25px;
+    border: 2px solid #c03939;
+    border-radius: 15px;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #d00000, #900000);
+    border-color: #ff5555;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(180, 0, 0, 0.4);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .container {
     text-align: center;
 }
+.button-container {
+    background: rgba(15, 15, 15, 0.85);
+    width: 600px;
+    margin: 30px auto;
+    padding: 35px 25px;
+
+    border: 1px solid #650000;
+    border-radius: 20px;
+
+    box-shadow: 
+        0 0 20px rgba(150, 0, 0, 0.2),
+        inset 0 0 15px rgba(255, 0, 0, 0.05);
+
+    backdrop-filter: blur(10px);
+}
+.section-title {
+    color: #ff3333;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+
+    margin: 35px 0 20px;
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #650000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
 </style>
 <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-<title>CODM BR GUNSMITHS</title>
+<title>iwase</title>
 </head>
 <body>
-    <h1>br builds ni iwase</h1>
+    <h1>yes</h1>
     <div class="container">
-    <a href="ar.html" class="button">Assault Rifles</a>
-    
-    <br>
-    <a href="smg.html" class="button">Sub-Machine Guns</a>
-    <br>
-    <a href="lmtg.html" class="button">Light-Machine Guns</a>
-    <br>
-    <a href="sr.html" class="button">Sniper Rifles</a>
-    <br>
-    <a href="sg.html" class="button">Shotguns</a>
-    <br>
-    <a href="mr.html" class="button">Marksman Rifles</a>
+    <div class="button-container">
+
+        <a href="https://steamcommunity.com/id/iwaselol/" class="button">Steam</a>
+        <br>
+
+        <a href="https://www.instagram.com/iwaselol/" class="button">Instagram</a>
+        <br>
+
+        <a href="https://x.com/iwaselol" class="button">Twitter</a>
+        <br>
+
+        <p class="section-title">Other</p>
+
+        <a href="CODM.html" class="button">Gunsmith</a>
+
     </div>
+</div>
 </body>
 </html>
